@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Comence por el html, baja hasta conseguir el html-->
+<head>
+    <meta charset="UTF-8">
+<!--Este es el titulo de la pestana del navegador-->
+    <title>Post instagram</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fdf596022e.js" crossorigin="anonymous"></script>
+<style>
+      body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+            margin: 0;
+        }
+
+    .post {
+        width: 400px;
+        background: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #dbdbdb;
+    }
+
+    .post-header {
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+     }
+
+    .header-left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .avatar{
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    .username{
+        font-weight: 600;
+    }
+    .header-right {
+        display: flex;
+        justify-content: end;
+    }
+
+    .img{
+        width: 100%;
+        display: block;
+    }
+    .post-actions{
+        display:flex;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 10px 10px;
+        font-size: 15px;
+}
+    .post-actions-right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+}
+
+    .post-actions-left{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .fa-regular{
+        margin-right: 6px;
+    }
+    
+    .post-caption{
+        padding: 0 6px;
+        margin-bottom: 28px;
+    }
+    .post-username{
+        font-weight: 600;
+    }
+    .post-caption{
+        font-weight: 400;
+    }
+    .post-time{
+        font-size: 10px;
+        color: 8e8e8e;
+        padding: 10px 10px 10px;
+    }
+</style>
+<body>
+    <div class="post">
+        <div class="post-header">
+            <div class="header-left">
+                <img src="https://i.pinimg.com/736x/3c/69/0c/3c690c393ace71952f765e7077f79a48.jpg" class="avatar">
+                <span class="username">mclaren</span>
+            </div>
+            <div class="header-right">
+                <i class="fa-solid fa-ellipsis-vertical menu-icon"></i>
+            </div>
+        </div>
+        
+        <img src="https://hips.hearstapps.com/hmg-prod/images/race-winner-lando-norris-of-great-britain-and-mclaren-news-photo-1761517070.pjpeg?crop=1.00xw:0.753xh;0,0.0935xh&resize=1800:*" class="img">
+        <div class="post-actions">
+            <div class="post-actions-left">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-comment"></i>
+                <i class="fa-regular fa-paper-plane"></i>
+            </div>
+            <div class="post-actions-right">
+                <i class="fa-regular fa-bookmark"></i>
+            </div>
+        </div>
+        <div class="post-caption">
+            <span class="post-username">mclaren</span>
+            <span class="post-caption">Lando Norris is the new WDC leader!</span>
+        </div>
+        <div class="post-time"><span>hace 1 dia</span></div>
+    </div>
+</body>
+</html>
